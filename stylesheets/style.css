@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Scope+One&display=swap');
+
+h1 {
+    font-family: 'Merriweather', serif;
+    color: #b09765;
+}	
+
+h2, h3 {
+    font-family: 'Josefin Slab', serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 2px 1px 1.5px;
+    margin-top: 0.8rem;
+    border: 0.2pt dashed #827d7d;
+    padding: 2% 1.2%;   
+}
+
+a {
+    color: #1b2767;
+}
+
+body {
+    font-family: 'Scope One', serif;
+    background-color: #fbffff;
+    color: #1b2767;
+}
+
+
+#sobremi {
+    background-color: #fbffff;
+}
+
+#experiencia {
+    background-color: #fbffff;
+}
+
+#formacion {
+    background-color: #fbffff;
+}
+
+#habilidades {
+    background-color: #fbffff;
+}
+
+#contacto {
+    background-color: #fbffff;
+}

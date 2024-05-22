@@ -13,23 +13,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    
   </head>
   <body>
     <header>
       <h1>Juan Pablo Plúas Muñoz</h1>
       <p>Desarrollador de Software</p>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#sobremi">Sobre mí</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#formacion">Educación</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <nav id="navbar">
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
     </nav>
     <section id="sobremi">
-      <h2>Sobre mí</h2>
+      <h2 class="titulo-seccion">Sobre mí</h2>
       <p>
         Entusiasta con sólida formación académica y orientación hacia el desarro
         lo de habilidades y destrezas en el ámbito tecnológico. Apasionado por
@@ -156,27 +156,7 @@
 
     <section id="contacto">
       <h2>Contacto</h2>
-      <table>
-        <tr>
-          <td>
-            <a href="mailto:cdn343@outlook.com" style="font-weight: bold"
-              ><i class="fas fa-envelope"></i> Correo</a
-            >
-          </td>
-          <td>
-            <a href="https://github.com/jppluas" style="font-weight: bold"
-              ><i class="fas fa-code-branch"></i> Github</a
-            >
-          </td>
-          <td>
-            <a
-              href="https://www.linkedin.com/in/juanppluasm/"
-              style="font-weight: bold"
-              ><i class="fas fa-user"></i> LinkedIn</a
-            >
-          </td>
-        </tr>
-      </table>
+      
       <form>
         <h3>Formulario de Contacto</h3>
         <label for="nombre">Nombre:</label>
@@ -206,6 +186,27 @@
 
     <footer>
       <p>Juan Pablo Plúas Muñoz, 2024</p>
+      <table>
+        <tr>
+          <td>
+            <a href="mailto:cdn343@outlook.com" style="font-weight: bold"
+              ><i class="fas fa-envelope"></i> Correo</a
+            >
+          </td>
+          <td>
+            <a href="https://github.com/jppluas" style="font-weight: bold"
+              ><i class="fas fa-code-branch"></i> Github</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://www.linkedin.com/in/juanppluasm/"
+              style="font-weight: bold"
+              ><i class="fas fa-user"></i> LinkedIn</a
+            >
+          </td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>
