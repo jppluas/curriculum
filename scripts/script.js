@@ -1,4 +1,3 @@
-
 function toggleDarkMode() {
   var element = document.body;
   var navbar = document.getElementById("navbar");
@@ -6,8 +5,8 @@ function toggleDarkMode() {
   var inputs = document.querySelectorAll('input');
   var textareas = document.querySelectorAll('textarea');
   var selects = document.querySelectorAll('select');
-  var logo_espol = document.getElementById('logo-espol'); // Asegúrate de reemplazar 'myImage' con el id de tu imagen
-  var logo_narviz = document.getElementById('logo-narviz'); // Asegúrate de reemplazar 'myImage' con el id de tu imagen
+  var logo_espol = document.getElementById('logo-espol'); 
+  var logo_narviz = document.getElementById('logo-narviz'); 
 
   element.classList.toggle("dark-mode");
   navbar.classList.toggle("dark-mode");
@@ -27,15 +26,15 @@ function toggleDarkMode() {
 
   // Cambia la imagen cuando se aplica el modo oscuro
   if (element.classList.contains('dark-mode')) {
-    logo_espol.src = 'https://talentohumano.espol.edu.ec/Sitio/imagenes/logo-espol-blanco.png'; // Asegúrate de reemplazar esto con la ruta a tu imagen de modo oscuro
+    logo_espol.src = 'https://talentohumano.espol.edu.ec/Sitio/imagenes/logo-espol-blanco.png'; 
   } else {
-    logo_espol.src = 'https://capacitavirtual.espol.edu.ec/pluginfile.php/1/theme_lambda/logo/1708375954/logo_espol.png'; // Asegúrate de reemplazar esto con la ruta a tu imagen de modo claro
+    logo_espol.src = 'https://capacitavirtual.espol.edu.ec/pluginfile.php/1/theme_lambda/logo/1708375954/logo_espol.png'; 
   }
 
   if (element.classList.contains('dark-mode')) {
-    logo_narviz.src = 'https://iston.ec/img/cms/logo-narviz%202-05.png'; // Asegúrate de reemplazar esto con la ruta a tu imagen de modo oscuro
+    logo_narviz.src = 'https://iston.ec/img/cms/logo-narviz%202-05.png';
   } else {
-    logo_narviz.src = 'https://narviz.com/wp-content/uploads/2023/08/logo-narviz-Actualizado_Mesa-de-trabajo-1.svg'; // Asegúrate de reemplazar esto con la ruta a tu imagen de modo claro
+    logo_narviz.src = 'https://narviz.com/wp-content/uploads/2023/08/logo-narviz-Actualizado_Mesa-de-trabajo-1.svg'; 
   }
 }
 
