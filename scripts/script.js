@@ -1,3 +1,4 @@
+
 function toggleDarkMode() {
   var element = document.body;
   var navbar = document.getElementById("navbar");

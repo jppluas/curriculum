@@ -4,6 +4,9 @@ html {
     scroll-behavior: smooth;
 }
 
+span, .certificacion, .experiencia{
+    text-align: center;
+}
 
 section {
     padding-top: 15vh;
@@ -11,12 +14,12 @@ section {
     min-height: 70vh;
 }
 
-h1 {
+h1, h3 {
     font-family: 'Merriweather', serif;
     color: #b09765;
 }	
 
-h2, h3 {
+h2 {
     font-family: 'Josefin Slab', serif;
 }
 
@@ -30,6 +33,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 7vh;
 }
 
 #footer {
@@ -38,6 +42,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .footer-link {
@@ -60,6 +65,10 @@ footer {
 }
 
 #navbar a:hover {
+    color: #b09765;
+}
+
+a:hover {
     color: #b09765;
 }
 
@@ -99,6 +108,10 @@ a {
 
 #educacion {
     display: flex;
+}
+
+#educacion ul {
+   padding: 0;
 }
 
 #educacion > * {
@@ -144,6 +157,20 @@ footer {
     align-items: center;
 }
 
+.proyecto {
+    width: 30%;
+}
+
+.experiencias-box {
+    display: flex;  
+    height: 65vh;
+}
+
+.experiencias-box > * {
+    flex: 1;
+}
+
+
 div.experiencia {
     display: flex;
     flex-direction: column;
@@ -152,9 +179,11 @@ div.experiencia {
     border: 0.2pt solid #827d7d;
     border-radius: 10px;
     padding: 1%;   
-    flex: 3;
-    margin: 1%;
+    margin: 0.8em;
+}
 
+.experiencias-2 > * {
+    height: 42%;
 }
 
 .empresa {
@@ -172,10 +201,6 @@ div.experiencia {
     width: auto;
 }
 
-.experiencias-box {
-    display: flex;  
-    height: 65vh;
-}
 
 #listas-conocimientos {
     display: flex;
@@ -242,6 +267,11 @@ div.experiencia {
 .dark-mode a {
     color: #fbffff;
 }
+
+.dark-mode a:hover {
+    color: #b09765;
+}
+
 .dark-mode #navbar, .dark-mode #footer{
     background-color: #161619;
 }
@@ -250,3 +280,6 @@ div.experiencia {
     color: #fbffff;
 }
 
+.dark-mode #navbar a:hover {
+    color: #b09765;
+}
