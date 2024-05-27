@@ -14,199 +14,252 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="stylesheets/style.css" />
-    
+    <link rel="script" href="scripts/script.js" />
   </head>
   <body>
+    <script src="scripts/script.js"></script>
     <header>
-      <h1>Juan Pablo Plúas Muñoz</h1>
-      <p>Desarrollador de Software</p>
-    </header>
-    <nav id="navbar">
-        <a href="#sobremi">Sobre mí</a>
+      <nav id="navbar">
         <a href="#experiencia">Experiencia</a>
-        <a href="#formacion">Educación</a>
-        <a href="#habilidades">Habilidades</a>
+        <a href="#educacion">Educación</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
-    </nav>
+        <a id="toggleDarkMode" onclick="toggleDarkMode()"
+          ><i class="fas fa-lightbulb"></i
+        ></a>
+      </nav>
+    </header>
+
     <section id="sobremi">
-      <h2 class="titulo-seccion">Sobre mí</h2>
-      <p>
+      <h1>Juan Pablo Plúas Muñoz</h1>
+      <span>Desarrollador de Software</span>
+      <span id="resumen">
         Entusiasta con sólida formación académica y orientación hacia el desarro
-        lo de habilidades y destrezas en el ámbito tecnológico. Apasionado por
+        lo de conocimientos y destrezas en el ámbito tecnológico. Apasionado por
         el crecimiento profesional, demuestro una alta capacidad de
         desenvolvimiento en situaciones de presión, liderando la toma de
         decisiones de manera eficiente, proactiva y dinámica.
-      </p>
-
-      <iframe
-        width="800"
-        height="480"
-        src="https://www.youtube.com/embed/qNtxODk_Lmk"
-        title="El Futuro de las Computadoras Será Radicalmente Diferente"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      >
-      </iframe>
+      </span>
     </section>
 
     <section id="experiencia">
       <h2>Experiencia</h2>
 
-      <img
-        width="200px"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYej6_Ys_DkaRVUipw5sEAUkv08uegv-jVDT2dnWvcg&s"
-        alt="Logo Santa Priscila"
-      />
+      <div class="experiencias-box">
+        <div class="experiencia">
+          <a
+            href="https://www.santa-priscila-admin.com/"
+            target="_blank"
+            class="empresa"
+            >Industrial Pesquera Santa Priscila</a
+          >
+          <span class="puesto">Desarrollador Junior de Software</span>
+          <span class="fecha">2024</span>
 
-      <h3>Industrial Pesquera Santa Priscila</h3>
-      <p>Pasante en Desarrollo de Software</p>
-      <ul>
-        <li>Desarrollo de aplicación web y manejo de base de datos.</li>
-      </ul>
-      <p>Febrero de 2024 - Mayo de 2024 (4 meses)</p>
-      <p>Guayaquil, Guayas, Ecuador</p>
+          <img
+            class="logo-empresa"
+            width="200px"
+            src="https://www.santa-priscila-admin.com/ipsp/roles/imagenes_ipsp/logo_normal.png"
+            alt="Logo Santa Priscila"
+          />
+        </div>
 
-      <img
-        width="400px"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfddGMbEKgjvicfkvCgtJKQ0gvUc3QYdVbHlTL02y&s"
-        alt="Logo ESPOL"
-      />
-      <h3>Escuela Superior Politécnica del Litoral</h3>
-      <p>
-        Ayudante de Docencia de Fundamentos de Electricidad y Sistemas Digitales
-      </p>
-      <ul>
-        <li>Diseño e Implementación de circuitos electrónicos y digitales.</li>
-      </ul>
-      <p>Septiembre de 2023 - Enero de 2024 (5 meses)</p>
-      <p>Guayaquil, Guayas, Ecuador</p>
-      <p>Ayudante de Gestión en Laboratorios de Computación</p>
-      <ul>
-        <li>Soporte en Hardware y Software Académico.</li>
-      </ul>
-      <p>Mayo de 2023 - Septiembre de 2023 (5 meses)</p>
-      <p>Guayaquil, Guayas, Ecuador</p>
+        <div class="experiencia">
+          <a href="https://www.espol.edu.ec/es" target="_blank" class="empresa"
+            >Escuela Superior Politécnica del Litoral</a
+          >
+          <span class="puesto">
+            Profesor Manual de Fundamentos de Electricidad y Sistemas
+            Digitales</span
+          >
+          <span class="puesto"
+            >Asistente en Soporte en Hardware y Software en Laboratorios de Redes
+            Avanzadas</span
+          >
 
-      <img
-        width="400px"
-        src="https://narviz.com/wp-content/uploads/2023/08/logo-narviz-Actualizado_Mesa-de-trabajo-1.svg"
-        alt="Logo Narviz"
-      />
+          <img
+          id="logo-espol"
+            class="logo-empresa"
+            width="200px"
+            src="https://capacitavirtual.espol.edu.ec/pluginfile.php/1/theme_lambda/logo/1708375954/logo_espol.png"
+            alt="Logo ESPOL"
+          />
+        </div>
 
-      <h3>Narviz | Ecommerce & Consulting</h3>
-      <p>Pasante en Desarrollo Web Full Stack</p>
-      <ul>
-        <li>Desarrollo de páginas web y manejo de base de datos.</li>
-      </ul>
-      <p>Octubre de 2023 - Diciembre de 2023 (3 meses)</p>
-      <p>Guayaquil, Guayas, Ecuador</p>
+        <div class="experiencia">
+          <a href="https://narviz.com/" target="_blank" class="empresa"
+            >Narviz | Ecommerce & Consulting</a
+          >
+          <span class="puesto">Desarrollador Junior Web Full Stack</span>
+          <span class="fecha">2023</span>
+
+          <img
+          id="logo-narviz"
+            class="logo-empresa"
+            width="400px"
+            src="https://narviz.com/wp-content/uploads/2023/08/logo-narviz-Actualizado_Mesa-de-trabajo-1.svg"
+            alt="Logo Narviz"
+          />
+        </div>
+      </div>
     </section>
-    <section id="formacion">
-      <h2>Educación</h2>
-      <ul>
-        <li>
-          <h3>Diplomado en Bachillerato Internacional</h3>
-          <p>Unidad Educativa del Milenio Dr. Alfredo Raúl Vera Vera, 2021</p>
-          <p>Guayaquil, Guayas, Ecuador</p>
-        </li>
-        <li>
-          <h3>Ingeniería en Computación</h3>
-          <p>Escuela Superior Politécnica del Litoral, 2021 - Actualidad</p>
-          <p>Guayaquil, Guayas, Ecuador</p>
-        </li>
-      </ul>
+    <section id="educacion">
+      <div class="educacion">
+        <h2>Educación</h2>
+        <ul>
+          <li class="escuela">
+            <h3>Diplomado en Bachillerato Internacional</h3>
+            <span>Unidad Educativa del Milenio Dr. Alfredo Raúl Vera Vera</span>
+            <span>2021</span>
+            <span>Guayaquil, Guayas, Ecuador</span>
+          </li>
+          <li class="escuela">
+            <h3>Ingeniería en Computación</h3>
+            <span>Escuela Superior Politécnica del Litoral</span>
+            <span> 2021 - Actualidad</span>
+            <span>Guayaquil, Guayas, Ecuador</span>
+          </li>
+        </ul>
+      </div>
 
-      <h2>Certificaciones</h2>
-      <ul>
-        <li>
-          <h3>CCNA: Introducción a Redes</h3>
-          <p>Cisco Networking Academy, 2023</p>
-        </li>
-        <li>
-          <h3>Windows Server: Active Directory</h3>
-          <p>LinkedIn, 2024</p>
-        </li>
-        <li>
-          <h3>Experiencia de usuario (UX) avanzado</h3>
-          <p>LinkedIn, 2024</p>
-        </li>
-        <li>
-          <h3>Fundamentos de la ciberseguridad para profesionales IT</h3>
-          <p>LinkedIn, 2024</p>
-        </li>
-      </ul>
+      <div class="certificaciones">
+        <h2>Certificaciones</h2>
+        <ul>
+          <li class="certificacion">
+            <h3>CCNA: Introducción a Redes</h3>
+            <span>Cisco Networking Academy, 2023</span>
+          </li>
+          <li class="certificacion">
+            <h3>Windows Server: Active Directory</h3>
+            <span>LinkedIn, 2024</span>
+          </li>
+          <li class="certificacion">
+            <h3>Experiencia de usuario (UX) avanzado</h3>
+            <span>LinkedIn, 2024</span>
+          </li>
+          <li class="certificacion">
+            <h3>Fundamentos de la ciberseguridad para profesionales IT</h3>
+            <span>LinkedIn, 2024</span>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Dominio de Suite Microsoft Office y VBA.</li>
-        <li>Diseño de prototipos de alta fidelidad en Figma.</li>
-        <li>Programación de aplicaciones web y móviles con PHP, Flutter.</li>
-        <li>Manejo de base de datos MySQL.</li>
-        <li>
-          Conocimiento avanzado en hardware y software académico e
-          institucional.
-        </li>
-        <li>Análisis de datos con PowerBI.</li>
-        <li>Administración de servidores Windows Server.</li>
-      </ul>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      
-      <form>
-        <h3>Formulario de Contacto</h3>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" required />
-        <label for="celular">Número de Celular:</label>
-        <input type="tel" id="celular" name="celular" required />
-        <label for="motivo">Motivo de Contacto:</label>
-        <textarea id="motivo" name="motivo" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-
-      <div id="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63792.24264597484!2d-80.03666717832033!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716216738372!5m2!1ses!2sec"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+    <section id="conocimientos">
+      <h2>Conocimientos</h2>
+      <div id="listas-conocimientos">
+        <ul>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>PHP</li>
+        </ul>
+        <ul>
+          <li>Flutter</li>
+          <li>PowerBI</li>
+          <li>Microsoft Active Directory</li>
+          <li>Open Broadcaster Software</li>
+          <li>Adobe Premiere Pro</li>
+          <li>Figma</li>
+          <li>Adobe Illustrator</li>
+          <li>Arduino</li>
+        </ul>
       </div>
     </section>
 
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <div class="proyectos">
+        <div class="proyecto">
+          <h3>Proyecto Incubadora de Huevo</h3>
+          <span>2023</span>
+          <span>Desarrollo de prototipo de baja fidelidad de una incubadora de huevos que regula la temperatura interna utilizando sensor de temperatura y luz.</span>
+          <iframe width="200" height="356" src="https://www.youtube.com/embed/fZR3-7y3fJU" title="Proyecto Control de temperatura y ventilación para una incubadora" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctame</h2>
+      <div class="contactame">
+        <form class="contactame-form">
+          <form-group>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </form-group>
+          <form-group>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+          </form-group>
+          <form-group>
+            <label for="celular">Número de Celular:</label>
+            <input type="tel" id="celular" name="celular" required />
+          </form-group>
+          <form-group>
+            <label for="motivo">Motivo de Contacto:</label>
+            <select id="motivo" name="motivo" required>
+              <option value="trabajo">Oferta de Trabajo</option>
+              <option value="proyecto">Proyecto</option>
+              <option value="otro">Otro</option>
+            </select>
+          </form-group>
+          <form-group>
+            <label for="motivo">Descripción:</label>
+            <textarea id="motivo" name="motivo" required></textarea>
+          </form-group>
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63792.24264597484!2d-80.03666717832033!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716216738372!5m2!1ses!2sec"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <footer>
-      <p>Juan Pablo Plúas Muñoz, 2024</p>
-      <table>
-        <tr>
-          <td>
-            <a href="mailto:cdn343@outlook.com" style="font-weight: bold"
-              ><i class="fas fa-envelope"></i> Correo</a
-            >
-          </td>
-          <td>
-            <a href="https://github.com/jppluas" style="font-weight: bold"
-              ><i class="fas fa-code-branch"></i> Github</a
-            >
-          </td>
-          <td>
-            <a
-              href="https://www.linkedin.com/in/juanppluasm/"
-              style="font-weight: bold"
-              ><i class="fas fa-user"></i> LinkedIn</a
-            >
-          </td>
-        </tr>
-      </table>
+      <div id="footer">
+        <span> © 2024. Todos los derechos reservados</span>
+      <a
+        class="footer-link"
+        href="mailto:cdn343@outlook.com"
+        target="_blank"
+        style="font-weight: bold"
+        ><i class="fas fa-envelope"></i
+      ></a>
+      <a
+        class="footer-link"
+        href="https://github.com/jppluas"
+        target="_blank"
+        style="font-weight: bold"
+        ><i class="fas fa-code-branch"></i
+      ></a>
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/juanppluasm/"
+        target="_blank"
+        style="font-weight: bold"
+        ><i class="fas fa-user"></i
+      ></a>
+      </div>
     </footer>
   </body>
 </html>
